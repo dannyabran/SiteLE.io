@@ -1,0 +1,1138 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap')
+
+@font-face
+    font-family: haboro
+    src: url(fonts/HaboroSans-NormRegular.otf)
+
+*
+    padding: 0
+    margin: 0
+    position: relative
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+.main-container
+    width: 100vw
+    height: 100vh
+    display: flex
+
+.capa
+    position: absolute
+    height: 100vw
+    width: 100vh
+    transform: rotate(-90deg) translateX(-100vh)
+    transform-origin: top left
+
+.section
+    width: 100vw
+    min-height: 100vh
+    scroll-snap-align: start
+
+.main-container2
+    scroll-snap-type: y mandatory
+    overflow-y: scroll
+    height: 100vh
+
+.title
+    width: 100vw
+    height: 100vh
+    color: white
+    background-color: black
+
+h1
+    opacity: 0
+    filter: blur(5px)
+    transition: all 2s
+
+#t1
+    font-size: 120px
+    width: fit-content
+    rotate: -10deg
+    position: absolute
+    top: 17%
+    left: 15%
+
+#t2
+    color: #ed166d
+    width: fit-content
+    font-size: 70px
+    position: absolute
+    top: 25%
+    left: 30%
+
+#t3
+    width: fit-content
+    font-size: 60px
+    position: absolute
+    top: 30%
+    left: 37%
+
+#t4
+    font-size: 120px
+    width: fit-content
+    position: absolute
+    rotate: -2deg
+    top: 35%
+    left: 25%
+
+#t5
+    color: #ed166d
+    width: fit-content
+    font-size: 70px
+    position: absolute
+    top: 46%
+    left: 32%
+
+#t6
+    width: fit-content
+    font-size: 60px
+    position: absolute
+    top: 51%
+    left: 29%
+
+#t7
+    color: #ed166d
+    width: fit-content
+    font-size: 170px
+    position: absolute
+    rotate: -7deg
+    top: 55%
+    left: 18%
+
+#mi
+    width: fit-content
+    color: #ed166d
+    font-family: 'Rock Salt'
+    font-size: 50px
+    rotate: 10deg
+    position: absolute
+    top: 75%
+    right: 15%
+
+#bi
+    width: fit-content
+    color: white
+    font-family: 'Rock Salt'
+    font-size: 50px
+    rotate: 10deg
+    position: absolute
+    top: 83%
+    right: 13%
+
+.show
+    filter: blur(0) 
+    opacity: 1 
+
+.hidden
+    opacity: 0
+    cursor: auto !important
+    transition: all .3s ease-out
+
+.nothidden
+    opacity: 1
+    transition: all 1s ease-in
+
+nav
+    position: absolute
+    width: 13%
+    height: 30%
+    bottom: 1%
+    right: 1%
+    z-index: 1
+
+nav svg
+    float: right
+    width: 30%
+    transition: width .2s linear
+    cursor: pointer
+
+nav svg:hover
+    width: 33%
+
+#alta
+    margin: 0
+    width: 50%
+    height: 100%
+    font-size: 5em
+    text-align: center
+    transition: font-size .2s ease-in
+
+    a
+        text-decoration: none
+        color: black
+
+#baixa
+    margin: 0
+    width: 50%
+    text-align: center
+    height: 100%
+    font-size: 5em
+    transition: font-size .1s linear
+
+    a
+        text-decoration: none
+        color: black
+
+#titulo-alta
+    top: 35%
+    transform: rotate(90deg)
+    cursor: pointer
+    color: #e71e6d
+
+.about-link
+    rotate: -40deg
+    color: #e71e6d
+    text-decoration: none
+    cursor: pointer
+    font-family: 'Rock Salt'
+    position: absolute
+    font-size: 30px
+    bottom: 8%
+    right: 3%
+    z-index: 3
+    transition: all .4s ease-in-out
+
+.about-link:hover
+    font-size: 35px
+    font-weight: 800
+
+#titulo-baixa
+    top: 30%
+    cursor: pointer
+
+#baixa:hover
+    font-size: 5.5em
+
+#alta:hover
+    font-size: 5.5em
+
+.alta_hover
+    display: flex
+    flex-direction: column
+    align-items: center
+    z-index: 1
+    background-color: rgb(0,0, 0, .3)
+    width: 100%
+    height: 100%
+    position: absolute
+    opacity: 0
+    transition: all 1s ease-in-out
+
+.alta_hover:hover
+    opacity: 1
+
+.seta_alta
+    margin-top: 30%
+    rotate: 90deg
+    color: white
+    height: 45%
+
+.baixa_hover
+    display: flex
+    align-items: center
+    z-index: 1
+    background-color: rgb(0,0, 0, .3)
+    width: 100%
+    height: 100%
+    position: absolute
+    opacity: 0
+    transition: all 1s ease-in-out
+
+.baixa_hover:hover
+    opacity: 1
+
+.seta_baixa
+    margin-left: 30%
+    color: white
+    height: 45%
+
+.bounce
+    animation: bounce 2s
+
+@keyframes bounce
+    0%,
+    25%,
+    50%,
+    75%,
+    100%
+        transform: translateX(0)
+
+    40%
+        transform: translateX(-20px)
+
+    60%
+        transform: translateX(-12px)
+
+.ler-artigo
+    margin-top: 15%
+    position: relative
+    font-size: 20px
+    color: white
+    font-family: 'Gill Sans'
+    font-weight: lighter
+    width: fit-content
+
+.ler-artigo2
+    margin-left: 10%
+    rotate: -90deg
+    position: relative
+    font-size: 20px
+    color: white
+    font-family: 'Gill Sans'
+    font-weight: lighter
+    width: fit-content
+
+.links
+    width: 100%
+    height: 60%
+
+.anchor
+    opacity: 0
+    text-decoration: none
+    color: black
+    font-size: 1.5em
+    display: block
+    text-align: center
+    top: 30%
+    margin-bottom: 5%
+    transition: opacity .5s ease
+
+.appear
+    opacity: 1
+
+.idk
+    height: 100vh
+    width: 100vw
+    display: flex
+    justify-content: center
+    align-items: center
+
+//text 1
+
+.reasons-title-d1
+    top: 5%
+    left: 17%
+    rotate: -10deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number1
+    top: -8%
+    left: 8%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n1
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts1
+    margin-top: 20%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 2
+
+.reasons-title-d2
+    top: 26%
+    left: 24%
+    rotate: -8deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number2
+    top: 0
+    left: 13%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n2
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts2
+    margin-top: 50%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 3
+
+.reasons-title-d3
+    top: 26%
+    left: 16%
+    rotate: -8deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number3
+    top: -5%
+    left: 0
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n3
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 0
+    font-size: 80px
+
+.reasons-texts3
+    margin-top: 40%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 4
+
+.reasons-title-d4
+    top: 8%
+    left: 10%
+    rotate: -25deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number4
+    top: -7%
+    left: 13%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n4
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts4
+    margin-top: 35%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 5
+
+.reasons-title-d5
+    top: 13%
+    left: 33%
+    rotate: -15deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number5
+    top: -5%
+    left: 13%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n5
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts5
+    margin-top: 20%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 6
+
+.reasons-title-d6
+    top: 18%
+    left: 40%
+    rotate: -15deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number6
+    top: 0
+    left: 15%
+    rotate: 19deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n6
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts6
+    margin-top: 20%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 7
+
+.reasons-title-d7
+    top: 25%
+    left: 30%
+    rotate: -10deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number7
+    top: -1%
+    left: 7%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n7
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts7
+    margin-top: 50%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 8
+
+.reasons-title-d8
+    top: 15%
+    left: 19%
+    rotate: -5deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number8
+    top: -6%
+    left: 7%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n8
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts8
+    margin-top: 10%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 9
+
+.reasons-title-d9
+    top: 5%
+    left: 28%
+    rotate: -15deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number9
+    top: -6%
+    left: 11%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n9
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts9
+    margin-top: 10%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 10
+
+.reasons-title-d10
+    top: 8%
+    left: 28%
+    rotate: -13deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number10
+    top: -6%
+    left: 11%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n10
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts10
+    margin-top: 10%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 11
+
+.reasons-title-d11
+    top: 8%
+    left: 28%
+    rotate: -13deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number11
+    top: -6%
+    left: 11%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n11
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts11
+    margin-top: 10%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 12
+
+.reasons-title-d12
+    top: 18%
+    left: 28%
+    rotate: -5deg
+    position: absolute
+    text-align: right
+    line-height: 1.5em
+    font-family: 'Rock Salt'
+    font-size: 50px
+
+.reasons-title-d-number12
+    top: -10%
+    left: 5%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n12
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts12
+    margin-top: 25%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+//text 13
+
+.reasons-title-d13
+    top: 3%
+    left: 32%
+    rotate: -5deg
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-d-number13
+    top: -6%
+    left: 11%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 60px
+
+.reasons-title-n13
+    color: #ed166d
+    position: absolute
+    top: 0
+    left: 11%
+    font-size: 80px
+
+.reasons-texts13
+    margin-top: 10%
+    font-size: 20px
+    width: 35vw
+    text-align: justify
+
+.reason1
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason2
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason3
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 35%
+    height: 80%
+
+.reason4
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason5
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason6
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason7
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason8
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason9
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason10
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason11
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason12
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.reason13
+    position: absolute
+    display: grid
+    align-content: center
+    justify-content: center
+    width: 45%
+    height: 80%
+
+.texts
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+.mouse
+    position: absolute
+    top: 85%
+    left: 50vw
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+
+@keyframes scroll
+    0%
+        transform: translateY(0)
+
+    30%
+        transform: translateY(100px)
+
+svg #wheel
+    animation: scroll ease 1.5s infinite
+
+.title svg
+    height: fit-content
+    position: absolute
+    bottom: 8%
+    left: 50%
+
+.title p
+    position: absolute
+    bottom: 3%
+    left: 48.5%
+
+.right
+    position: absolute
+    top: 50%
+    right: 20%
+    width: 8%
+    height: 8%
+    cursor: pointer
+
+.left
+    position: absolute
+    top: 50%
+    left: 20%
+    rotate: -180deg
+    width: 8%
+    height: 8%
+    cursor: pointer
+
+.slide
+    width: 100vw
+    height: 100vh
+
+.wrapper
+    display: flex
+    flex-direction: row
+    width: fit-content
+    height: 100vh
+    transform: rotate(90deg) translateY(-100vh)
+    transform-origin: top left
+
+.outer-wrapper
+    width: 100vh
+    height: 100vw
+    transform: rotate(-90deg) translateX(-100vh)
+    transform-origin: top left
+    overflow-y: scroll
+    overflow-x: hidden
+    position: absolute
+
+.baixa-title
+    margin-top: 60vh
+    margin-left: 5vw
+    font-weight: bold
+    font-size: 50px
+    width: fit-content
+
+.text1
+    margin-left: 5vw
+    margin-top: 3vh
+    font-size: 30px
+    width: fit-content
+
+.text2
+    margin-left: 5vw
+    margin-top: 3vh
+    font-size: 20px
+    width: 35vw
+    font-weight: lighter
+
+.text-g
+    text-align: justify
+    margin-left: 5%
+    margin-top: 10%
+    font-size: 20px
+    width: 25vw
+    font-weight: lighter
+
+.text-g2
+    text-align: justify
+    margin-left: 5%
+    margin-top: 15%
+    font-size: 20px
+    width: 25vw
+    font-weight: lighter
+
+.text-g3
+    text-align: justify
+    margin-top: 15%
+    font-size: 20px
+    width: 35vw
+    font-weight: lighter
+
+.two
+    width: 150vw
+    display: flex
+
+.karel
+    width: 60vw
+    height: auto
+
+.three
+    display: flex
+
+.world
+    height: 100vh
+
+.four
+    display: flex
+    width: 130vw
+
+.karel3b
+    width: 60vw
+    height: 80vh
+    margin-top: 20vh
+    margin-left: 10vw
+
+.five
+    width: 150vw
+    display: flex
+
+.letras
+    width: 80vw
+
+.letras2
+    width: 20vw
+    height: 30vh
+    margin-top: 70vh
+    margin-left: 10vw
+
+.six
+    width: 110vw
+    display: flex
+
+.relevant
+    width: 70vw
+    height: 100vh
+
+.seven
+    display: flex
+    width: 130vw
+
+.karel6b
+    width: 60vw
+    height: 80vh
+    margin-top: 20vh
+    margin-left: 10vw
+
+.eight
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 70vw
+
+.nine
+    display: flex
+    width: 110vw
+
+.elem
+    width: 30vw
+    height: 80vh
+    margin-top: 20vh
+
+.em
+    height: 80vh
+    margin-top: 20vh
+    margin-left: 5vw
+
+.ten
+    display: flex
+
+.curiosity
+    height: 110vh
+
+.eleven
+    display: flex
+    width: 190vw
+
+.karel7
+    margin-top: 20vh
+    margin-left: 10vw
+    height: 80vh
+    width: 50vw
+
+.karel8
+    margin-top: 20vh
+    margin-left: 5vw
+    height: 80vh
+    width: 50vw
+
+.twelve
+    display: flex
+    width: 190vw
+
+.karel11
+    margin-top: 20vh
+    margin-left: 10vw
+    height: 80vh
+    width: 50vw
+
+.karel9
+    margin-top: 20vh
+    margin-left: 5vw
+    height: 80vh
+    width: 50vw
+
+.thirteen
+    display: flex
+    width: 150vw
+
+.karel12
+    margin-top: 10vh
+    margin-left: 10vw
+    height: 90vh
+    width: 70vw
+
+.fourteen
+    display: flex
+    width: 130vw
+
+.grelha
+    margin-top: 60vh
+    width: 35vw
+    height: 55vh
+
+.grelha2
+    width: 50vw
+    height: 90vh
+    margin-left: 10vw
+    margin-top: 5vh
+
+.fifteen
+    display: flex
+    width: 130vw
+
+.letras3
+    width: 80vw
+
+.seta
+    position: fixed
+    -webkit-transform: scaleX(-1)
+    transform: scaleX(-1)
+    top: 0
+    left: 0
+    width: 10vw
+    z-index: 4
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-decoration: none
+
+.seta img
+    cursor: pointer
+    width: 100%
+    height: 100%
+
+.home
+    color: #ed166d
+    font-weight: bolder
+    font-size: 25px
+    -webkit-transform: scaleX(-1)
+    transform: scaleX(-1)
+    padding-left: 40px
+    opacity: 0
+    filter: blur(5px)
+    transition: all .5s
+
+.seta:hover .home
+    opacity: 1
+    filter: blur(0)
+
+.container
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.about-text
+    color: white
+    text-align: justify
+    width: 30%
+
+.blob
+    position: absolute
+    width: 45%
+    top: 18%
+    left: 27%
+
+.about-title
+    font-size: 100px
+    margin-bottom: 10%
+
+.about-title2
+    color: #ed166d
+    top: 20%
+    position: absolute
+    font-family: 'Rock Salt'
+    font-size: 80px
+    margin-bottom: 10%
+
+.capa2
+    position: absolute
+    height: 100vw
+    width: 100vh
+    transform: rotate(-90deg) translateX(-100vh)
+    transform-origin: top left
